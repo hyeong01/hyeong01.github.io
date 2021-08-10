@@ -18,7 +18,7 @@ summary: 123
 2. Cross-validation: iterating through the training dataset and using it as a validation data. Often used when finding a hyperparameter.
 3. Bootstrapping: Random sampling with replacement and creating multiple models to train or test the model.
 4. Bagging: Training multiple models with boostrapping and accumulating the models through measures such as voting or averaging.
-5. [Boosting](https://www.tsohost.com/assets/uploads/blog/under-construction-pages-1-image-library.jpg)
+5. [Boosting](https://hyeong01.github.io/math/Boosting-Basic-Concepts/)
 6. Gradient Descent Methods
 - Stochastic Gradient Descent: Traing the model with a single sample, one by one.
 - Mini-batch Gradient Descent: Training the model with a subset of data.
