@@ -36,3 +36,28 @@ description: Basic concept of convolution,
         - Channeling the input to the output channel directly with or without inception block. The layer aims to train on x + f(x)
     - DenseNet:
         - DenseNet is similar with ResNet, but it concatenates instead of adding. The channel increases geometrically, thus need to use 1x1 kernel convolution
+7. Segmentation
+    - Fully Convolutional Network (convolutionalization):
+        - Removing the dense layer and replacing it with convolutional layer
+        - Number of the pararmeters are the same
+        - Result layer small. Need to size up (deconvolution)
+        - Not the other way around of deconvolution because the lost information due to small scale does not come back
+    - R-CNN:
+        - Many random bounding box + CNN
+        - Run the nn for every bounding box, slow
+    - SPPNet:
+        - Run the nn only one time for one image. Use on;y the corresponding weights of that bounding box
+    - Fast R-CNN:
+        - SSPNet + bouding box regression (how to move the bb)
+    - Faster R-CNN:
+        - Network also selects the bounding box
+        - Region Proposal Network + Fast R-CNN -> Faster R-CNN
+    - Region Proposal Network?
+        - Anchor Boxes: presized detection boxes
+        - Anchor Boxes: the nn decides what size range, how much the size should change, and whether the box is useful
+    - YOLO
+        - extremely fast object dectection (bounding box)
+        - No discrete region proposal network, thus faster
+        - Divides the input image into NxN grid
+        - Each bounding box is reponsible for selecting five cells and classifying the class
+        - Output: NxNx5xC
