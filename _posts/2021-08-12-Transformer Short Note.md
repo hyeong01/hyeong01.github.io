@@ -14,7 +14,7 @@ description: Transformer Model Basic Concepts
 
 ### Tramsformer:
 - To solve the problem in dealing with sequential data; the input often changes in sequence and length
-- recursive x attententive o
+- Recursive x attententive o
 - "Image"
 - Encoder (attention)
     - Not regressive

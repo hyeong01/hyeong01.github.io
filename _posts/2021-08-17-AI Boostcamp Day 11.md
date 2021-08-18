@@ -23,7 +23,6 @@ description: Basic Pytorch Implementation
         - Auto Gradient
     
 2. [PyTorch Operations](https://hyeong01.github.io/pytorch%20syntax/PyTorch-Syntax-2/)
-```
 
 
 
