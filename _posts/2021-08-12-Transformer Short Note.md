@@ -1,6 +1,6 @@
 ---
 date: 2021-08-12
-title: "Transformer Simple Concept Note"
+title: "Transformer Short Note"
 categories: 
  - DL Models
 tags:
