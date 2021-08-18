@@ -47,8 +47,9 @@ description: Image Deep Learning with Transformer Paper Review
     - Layernorm (LN) is applied before every MLP and MSA block
     - MSA Layer = <img src="https://latex.codecogs.com/gif.latex?Z_l^{'}&space;=&space;MSA(LN(Z_{l-1}))&plus;Z_{l-1}&space;(l&space;=&space;1,&space;...,&space;L)" title="Z_l^{'} = MSA(LN(Z_{l-1}))+Z_{l-1} (l = 1, ..., L)" />
     - MLP Layer = <img src="https://latex.codecogs.com/gif.latex?Z_l&space;=&space;MLP(LN(Z_{l}^{'}))&plus;Z_{l}^{'}&space;(l&space;=&space;1,&space;...,&space;L)" title="Z_l = MLP(LN(Z_{l}^{'}))+Z_{l}^{'} (l = 1, ..., L)" />
-    - Output Layer = <img src="https://latex.codecogs.com/gif.latex?y&space;=&space;LN(Z^0_L)" title="y = LN(Z^0_L)" />
-
+    3. Output Layer
+    - <img src="https://latex.codecogs.com/gif.latex?y&space;=&space;LN(Z^0_L)" title="y = LN(Z^0_L)" />
+- 
 
 
 
