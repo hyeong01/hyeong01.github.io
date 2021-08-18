@@ -1,6 +1,6 @@
 ---
 date: 2021-08-11
-title: "Pytorch Syntax 1"
+title: "[Pytorch Syntax] Confusing Syntaxes"
 categories: 
  - PyTorch Syntax
 tags:

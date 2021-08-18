@@ -1,6 +1,6 @@
 ---
 date: 2021-08-17
-title: "PyTorch Syntax 2"
+title: "[PyTorch Syntax] Tensor Operations"
 categories: 
  - PyTorch Syntax
 tags:
