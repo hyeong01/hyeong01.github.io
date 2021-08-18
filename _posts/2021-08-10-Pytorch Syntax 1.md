@@ -1,8 +1,8 @@
 ---
 date: 2021-08-11
-title: "Pytorch Grammar Note"
+title: "Pytorch Syntax 1"
 categories: 
- - Pytorch
+ - PyTorch Syntax
 tags:
  - Deep Learning
  - Pytorch
