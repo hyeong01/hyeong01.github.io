@@ -1,6 +1,6 @@
 ---
 date: 2021-08-18
-title: "[Paper Review] An Image Is Worth 16x16 Words: Transformers for Image Recognition at Scale"
+title: "[Paper Review] ViT (Vision Transformer)"
 categories: 
  - Paper Review
 tags:
@@ -10,6 +10,10 @@ tags:
 author: Hyeong
 description: Image Deep Learning with Transformer Paper Review
 ---
+#### Objective Paper:
+[AN IMAGE IS WORTH 16X16 WORDS:
+TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE](https://arxiv.org/pdf/2010.11929.pdf)
+
 #### 0. Abstract
 - Transformer model has limited uses in CV
 - Findings: Transformer only model can perform very well in CV
@@ -29,7 +33,8 @@ description: Image Deep Learning with Transformer Paper Review
 
 
 #### 3. Method
-- ViT aims to apply the original transformer as much as possible
+![imgur](https://i.imgur.com/WG8STi3.png)
+- ViT aims to apply the original transformer model as much as possible
 - Model Structure
     1. Linear Projection of Flattened Patches
     - Original Image: <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}^{H*W*C}" title="\mathbb{R}^{H*W*C}" />
@@ -49,7 +54,29 @@ description: Image Deep Learning with Transformer Paper Review
     - MLP Layer = <img src="https://latex.codecogs.com/gif.latex?Z_l&space;=&space;MLP(LN(Z_{l}^{'}))&plus;Z_{l}^{'}&space;(l&space;=&space;1,&space;...,&space;L)" title="Z_l = MLP(LN(Z_{l}^{'}))+Z_{l}^{'} (l = 1, ..., L)" />
     3. Output Layer
     - <img src="https://latex.codecogs.com/gif.latex?y&space;=&space;LN(Z^0_L)" title="y = LN(Z^0_L)" />
-- 
+
+#### 4. Experiments
+- Comparison of Models and the Size of Dataset
+    - ViT, ResNet, and Hybrid
+    - ViT adopts the configuration of BERT
+    - ViT model differs depending on the size of the patch. The smaller the patch, the more complicated the model is. Each sequence length is inversely proportional to the square of the patch size
+    - ViT model hyperparameters: <br/>
+    ![Imgur](https://i.imgur.com/1J2KmBj.png)
+    - ResNet with Batch Normalization for improvment
+- Comparison of Performance
+![Imgur](https://i.imgur.com/yCiU8nx.png)
+    - ViT-H/14 and 16: Huge ViT model with patch size of 14 and 16
+    - Hybrid Model, state of art in image classfication aside from ImageNet 
+    - Noisy Student: CNN model, state of art in image classfication for ImageNet
+    - Result: Some ViT outperform other models still consuming significantly less training resource
+- Data Size and Performance of Pre-Trained Models
+![Imgur](https://i.imgur.com/ZJmFKkn.png)
+    - The capacity of the large ViT models are fully utilized only for larger datasets (JFT-300M)
+- Scaling of Computational Resources
+![Imgur](https://i.imgur.com/3yGaf30.png)
+    - ViT outperforms ResNet in terms of the computational power and  the accuracy trade off
+    - The Hybrid model learns the task faster, but the computational; power and the accuracy trade off increases and ViT cathes up with larger computational resources
+
 
 
 
