@@ -10,7 +10,7 @@ tags:
 author: Hyeong
 description: Basic Pytorch Implementation
 ---
-#### Pytorch Tensor perators
+#### Pytorch Tensor operators
 - Numpy + AutoGrad
 - Tensor
     - list (Python) -> Ndarray (Numpy) -> Tensor (PyTorch)
