@@ -11,17 +11,17 @@ author: Hyeong
 description: Basic Pytorch Implementation
 ---
 #### Pytorch Tensor perators
-    - Numpy + AutoGrad
-    - Tensor
-        - list (Python) -> Ndarray (Numpy) -> Tensor (PyTorch)
-        - Almost identical with Ndarray
-        - Shares similar grammars with Numpy array
-        - Can produce from list or Ndarray 
-        - Tensor operations can utilize GPU unlike Numpy
-        - Use view instead of reshape function. Reshape creates a copy of the original tensor, whereas view only create a copy that is presented in a designated shape
-        - mm vs matmul: the same, but matmul supports boradcasting, thus could be confusing
-        <br/>        
-        - Examples:
+- Numpy + AutoGrad
+- Tensor
+    - list (Python) -> Ndarray (Numpy) -> Tensor (PyTorch)
+    - Almost identical with Ndarray
+    - Shares similar grammars with Numpy array
+    - Can produce from list or Ndarray 
+    - Tensor operations can utilize GPU unlike Numpy
+    - Use view instead of reshape function. Reshape creates a copy of the original tensor, whereas view only create a copy that is presented in a designated shape
+    - mm vs matmul: the same, but matmul supports boradcasting, thus could be confusing
+    <br/>        
+    - Examples:
         
 ```
 import numpy as np
