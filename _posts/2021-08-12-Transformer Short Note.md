@@ -15,8 +15,8 @@ description: Transformer Model Basic Concepts
 ### Tramsformer:
 - To solve the problem in dealing with sequential data; the input often changes in sequence and length
 - Recursive x attententive o
-- "Image"
 - Encoder (attention)
+![Imugr](https://i.imgur.com/JPxG6LA.png)
     - Not regressive
     - Create query vector, key vector, and value vector for each word
     - Dot product the query and key vector

@@ -25,7 +25,6 @@ description: Sequential Model Basic Concepts
 - Recurrent Neural Network:
     - Drawback: Shorterm dependencies. Information from long ago fades
     - Hidden state goes through multiple layers to reach other layers -> vanishing / exploding gradient
-    - "image"
 - LSTM:
     - Devised to prevent the shorterm dependemncy problem of RNN
 - GRU:

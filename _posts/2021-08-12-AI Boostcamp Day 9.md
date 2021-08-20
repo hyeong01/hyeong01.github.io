@@ -12,7 +12,7 @@ description: Basic Pytorch Implementation
 ---
 
 ### What I studied today:
-1. [Sequential Model](https://hyeong01.github.io/dl%20models/What-is-a-Transformer/)
+1. [Sequential Model](https://hyeong01.github.io/dl%20models/Sequential-Short-Note/)
 
-2. [Tramsformer](https://hyeong01.github.io/dl%20models/What-is-a-Transformer-copy/)
+2. [Tramsformer](https://hyeong01.github.io/dl%20models/Transformer-Short-Note/)
 
