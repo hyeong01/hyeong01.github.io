@@ -26,7 +26,8 @@ description: Basic Pytorch Implementation
 - transforms: preprocessing
 - Dataset: object that decides how to load a single data
 - DataLoader: providing data to the model via batch, suffle etc.
-- 
+
+3. [ViT Paper Review](https://hyeong01.github.io/paper%20review/Transformers-for-Image-Recongnition-at-Scale/)
 
 
 
