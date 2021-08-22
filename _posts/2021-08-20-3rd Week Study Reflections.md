@@ -12,6 +12,8 @@ description: 부스트캠프 3주차 주간학습 정리
 #### 0. 일간 학습 정리 링크
 [화요일 (210817)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-11/)
 [수요일 (210818)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-12/)
+[목요일 (210818)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-13/)
+[금요일 (210818)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-14/)
 
 #### 1. 못한 점
 - 이번주는 강의 진도도 못 따라갔고
@@ -19,6 +21,7 @@ description: 부스트캠프 3주차 주간학습 정리
 - 이건 전적으로 내 태도의 문제다. 학교에서 했던 것처럼 하자.
 - 코어 시간 때 이동하지 말자. 시간표 그대로 생활하자.
 - 그리고 논문 정리 한다고 과제가 하루 밀렸던 것도 문제다.
+- 일일 학습 기록 작성이 너무 느림. 그 시간에 코드를 더 봐야합니다
 
 #### 2. 해결 방안
 - 강의는 매일 10~12시에 끝내자

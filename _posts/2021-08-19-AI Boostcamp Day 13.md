@@ -28,6 +28,5 @@ description: Basic Pytorch Implementation
 
 5. Monitoring Tools for PyTorch
 - [Tensorboard](https://hyeong01.github.io/deep%20learning%20visualization/Basic-Tensorboard-with-Code/)
-
 - [Weight and Biases](https://hyeong01.github.io/deep%20learning%20visualization/Basic-Tensorboard-with-Code-copy/)
 
