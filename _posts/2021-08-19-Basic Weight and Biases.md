@@ -19,11 +19,16 @@ description: Weight and Biases Basics
 !pip install wandb -q
 ```
 - make config file
-
 ```python
 config={"epochs":EPOCHS, "batch_size":BATCH_SIZE, "learning_rate":LEARNING_RATE}
+# initialize. set entity name from web
+wandb.init(project="project_name", entity="entity_name")
+# after setting the configuartion dictionary
+wandb.init(project="project_name", config=config)
+# setting configuration 
+wandb.config.batch_size = BATCH_SIZE
+wandb.config.learning_rate = LEARNING_RATE
 ```
-
 - how to use in the model
 ```python
 for e in range(1, EPOCHS+1):
