@@ -16,7 +16,7 @@ description: Basic Pytorch Implementation
 
 2. Saving a Model
 - Can either save a the whole model or save only the parameters (smaller model)
-- Practice with Code
+- [Practice with Code](https://github.com/hyeong01/hyeong01.github.io/blob/master/example_code_stoarge/Saving_a_Model.ipynb)
 
 3. Saving a Checkpoint
 - Utilizing the function for saving models, we can create a checkpoint at every iterations
