@@ -4,13 +4,29 @@ title: "AI Boostcamp Day 13"
 categories: 
  - AI Boostcamp
 tags:
- - AutoGrad
- - Optimizer
- - Dataset
- - Dataloader
+ - Loading a Model
+ - Fine Tuning
 author: Hyeong
 description: Basic Pytorch Implementation
 ---
 
 ### What I studied today:
-____ 작성중___
+1. Recent Tendency of Using Models
+- Using pretrained models to fine-tune on a specific task
+
+2. Saving a Model
+- Can either save a the whole model or save only the parameters (smaller model)
+- Practice with Code
+
+3. Saving a Checkpoint
+- Utilizing the function for saving models, we can create a checkpoint at every iterations
+
+4. Transfer Learning
+- Using a pretrained model on a larger dataset and fine-tuning on a specific, smaller dataset to obtain better results
+- Freezing: frozing some of the parameters when tuning a pretrained model
+
+5. Monitoring Tools for PyTorch
+- Tensorboard
+
+- Weight and Biases
+
