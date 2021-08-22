@@ -29,13 +29,11 @@ os.makedirs(log_dir)
 from torch.utils.tensorboard import SummaryWriter
 import numpy as np
 ```
-
-```python
 - create different experiments
+```python
 experiment_dir = log_dir + '/exp1'
 writer = SummaryWriter(experiment_dir)
 ```
-
 - Log content
 ```python
 for iter_nth in range(100):

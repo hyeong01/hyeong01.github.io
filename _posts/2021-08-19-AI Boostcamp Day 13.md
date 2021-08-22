@@ -26,7 +26,7 @@ description: Basic Pytorch Implementation
 - Freezing: frozing some of the parameters when tuning a pretrained model
 
 5. Monitoring Tools for PyTorch
-- Tensorboard
+- [Tensorboard](https://hyeong01.github.io/deep%20learning%20visualization/Basic-Tensorboard-with-Code/)
 
 - Weight and Biases
 
