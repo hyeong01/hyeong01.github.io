@@ -1,6 +1,6 @@
 ---
 date: 2021-08-19
-title: "Tensorboard Short Note"
+title: "Basic Tensorboard with Code"
 categories: 
  - Deep Learning Visualization
 tags:
@@ -8,7 +8,7 @@ tags:
  - Tensorboard
  - Visualization
 author: Hyeong
-description: Tensorboard Short Note
+description: Tensorboard Basics
 ---
 
 ### Tensorboard
