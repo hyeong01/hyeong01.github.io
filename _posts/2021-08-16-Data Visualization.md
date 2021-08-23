@@ -1,5 +1,5 @@
 ---
-date: 2021-08-13
+date: 2021-08-16
 title: "데이터 시각화"
 categories: 
  - Data Visualization
@@ -41,4 +41,5 @@ description: Intro to data Visualization
  - 마크: 점, 선, 면
  - 채널: 각 마크에 대한 효과 (면적, 기울기, 부피, 색 등)
  - 전주의적 속성: (혼자만 색깔이 다르다든지, 크기가 다르다든지) 따로 집중하지 않아도 주의를 끄는 요소. 다만 여러 전주의적 요소가 작용하면 인지에 어려움 있을 수 있다
- 
+#### 시각화 기본
+ - Bar Plot
