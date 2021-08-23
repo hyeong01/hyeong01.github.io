@@ -28,11 +28,10 @@ description: P Stage 시작
 
 ### 이해가 안 된 것들
 - Baseline code는 왜 공개하는거지? 어떻게 쓰는거지? 그냥 편하게 IDLE로 쓰라고!
-- 
 
-### 마스크 이미지 분류 대회 정리
+### [마스크 이미지 분류 대회 정리](https://hyeong01.github.io/competition/1st-competition/)
 
-### 원격 서버 접속을 위한 Linux Command
+### [원격 서버 접속을 위한 Linux Command](https://hyeong01.github.io/linux/linux-command/)
 
 ### EDA (Exploratory Data Analysis)
 - Trying to understand the meaning of the data
