@@ -33,7 +33,6 @@ description: About Dataset
     - Dataset defining code
     ```python
     from torch.utils.data import Dataset
-    
     class MyData(Dataset):
         def __init__(self):
             pass
