@@ -29,4 +29,8 @@ description: First boostcamp CV competition
     - Jupyter Notebook
 
 ### Questions
-- Many data fields.. aside from the image itself. how can I use it?
+- Many data fields.. aside from the image itself. how can I use it? -> The goal is to predict all labels
+
+### Ideas
+- The faces in the photo are always in the middle. We can crop it for better performance
+- Better to have the result for each classes from different models or at least from a different vector. The suggested class of 0 from 17 with different classes merged into one vector is undesirable

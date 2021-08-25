@@ -1,6 +1,6 @@
 ---
 date: 2021-08-19
-title: "AI Boostcamp Day 13"
+title: "[AI Boostcamp Day 13] Saving, Transfering and Monitoring Models"
 categories: 
  - AI Boostcamp
 tags:
