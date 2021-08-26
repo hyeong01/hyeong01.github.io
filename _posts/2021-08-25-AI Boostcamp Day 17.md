@@ -20,3 +20,8 @@ description: About Dataset
         - train the whole layer 
     - Small Data
         - train only the FC layer
+
+### Reflections
+- Do not try to do anything after coming back home, when nobody is watching me. You are not going to be productive
+
+
