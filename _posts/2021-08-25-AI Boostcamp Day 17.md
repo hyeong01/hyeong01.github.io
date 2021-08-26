@@ -21,6 +21,12 @@ description: About Dataset
     - Small Data
         - train only the FC layer
 
+### Pear Session
+- https://www.notion.so/aa5b217b9b0140cfb10f4ec980b36c87?v=790a78942a234318a9bd84c5d5acfa4b&p=0664fa2877e647b7ae0dca0f87854b10
+
+### Assignments
+- Revise code and create custom dataset
+
 ### Reflections
 - Do not try to do anything after coming back home, when nobody is watching me. You are not going to be productive
 
