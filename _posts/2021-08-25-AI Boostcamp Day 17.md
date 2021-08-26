@@ -1,6 +1,6 @@
 ---
 date: 2021-08-25
-title: "[AI Boostcamp Day 16] Model "
+title: "[AI Boostcamp Day 17] Model "
 categories: 
  - AI Boostcamp
 tags:

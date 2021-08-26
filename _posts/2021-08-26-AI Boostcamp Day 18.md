@@ -1,6 +1,6 @@
 ---
 date: 2021-08-26
-title: "[AI Boostcamp Day 17] Training and Inference"
+title: "[AI Boostcamp Day 18] Training and Inference"
 categories: 
  - AI Boostcamp
 tags:
