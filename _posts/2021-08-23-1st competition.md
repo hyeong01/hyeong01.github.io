@@ -34,3 +34,16 @@ description: First boostcamp CV competition
 ### Ideas
 - The faces in the photo are always in the middle. We can crop it for better performance
 - Better to have the result for each classes from different models or at least from a different vector. The suggested class of 0 from 17 with different classes merged into one vector is undesirable
+
+### Techniques
+- Imbalanced dataset problem
+    - Use focal loss
+    - Use data augumentation
+- Resize
+    - original size of dataset 500x384
+    - 400x384 -> no face crop
+    - 384x384 -> very little face crop, still decent
+- Model Form
+    - destination class: 3
+    - 3 heads 1 model
+    - 1 head 3 models
