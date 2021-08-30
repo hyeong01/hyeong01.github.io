@@ -13,18 +13,22 @@ author: Hyeong
 description: About Tuning the DL Model
 ---
 ### What did I do today
-- 
+ - Stratified labeling (single person either in train or test dataset)
+ - Served transformation package
 
+### What I learned from others
+ - Use of augumentation like TTA, cutmix
+ - Early stopping
+ - Model is almost always about data -> importance of augmentation
+
+### What I should do tomorrow
+ - data rearrange -> place wrongly labeled data at the right place manually
+ - f1 loss
+ - try lots of models
 
 ### (Peer Session)[https://www.notion.so/2021-08-30-a3cba5ad040845b4bf0717bb78b41273]
 
-### What did I Do Today
-    - Asked people to train model for each task
-    - Validated the models other people made
-    - Combined the result and submitted
-    - Discussed and merged other functions
-
 ### Reflections
-    - Overall great!
+    - Make a plan always!
 
 
