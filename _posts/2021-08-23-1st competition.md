@@ -45,6 +45,18 @@ description: First boostcamp CV competition
 - (Stupid that we weren't doing it) Validation and train set split
 - (Seemingly useful for now) learning rate scheduler -> CosineAnnealingLR
 - (Great) Tidying up is so important. Name the model weights and tensorboard running log with time and other recognizable variables
-- ()
 
+### Techniques
+- Imbalanced dataset problem
+    - Use focal loss
+    - Use data augumentation
+- Resize
+    - original size of dataset 500x384
+    - 400x384 -> no face crop
+    - 384x384 -> very little face crop, still decent
+- Model Form
+    - destination class: 3
+    - 3 heads 1 model
+    - 1 head 3 models
 
+### (Model Tryouts)[https://www.notion.so/Parameter-7c91e3d70ec2404a9e56a49e78806d33]

@@ -45,3 +45,7 @@ writer.flush() # save log on the drive
 %load_ext tensorboard
 %tensorboard --logdir {log_dir}
 ```
+- Use Tensorboard
+```
+tensorboard --logdir PATH --host ADDR --port PORT
+```
