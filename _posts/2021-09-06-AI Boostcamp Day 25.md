@@ -1,5 +1,5 @@
 ---
-date: 2021-08-31
+date: 2021-09-06
 title: "[AI Boostcamp Day 25] Tapping into NLP"
 categories: 
  - AI Boostcamp
@@ -54,12 +54,9 @@ description: Tapping into NLP
     - GloVe
         - Computes the co-occurrence matrix first and then trains accordingly -> faster training
         - Using A as a ground truth possibility for co-occurance for inner product of words
-4. Types of RNN
-    - 
 
-### (Peer Session)[]
+### (Peer Session)[https://www.notion.so/nlp-team-9/2021-09-06-a127420e286a4a319c3a322262149a34]
 
-### Reflections
-    - Make a plan always!
+### Meet Up (Boostcamp )
 
 
