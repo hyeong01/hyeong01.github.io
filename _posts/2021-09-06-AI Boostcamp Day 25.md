@@ -55,8 +55,8 @@ description: Tapping into NLP
         - Computes the co-occurrence matrix first and then trains accordingly -> faster training
         - Using A as a ground truth possibility for co-occurance for inner product of words
 
-### (Peer Session)[https://www.notion.so/nlp-team-9/2021-09-06-a127420e286a4a319c3a322262149a34]
+### [Peer Session](https://www.notion.so/nlp-team-9/2021-09-06-a127420e286a4a319c3a322262149a34)
 
-### Meet Up (Boostcamp )
+### [Boostcamp Meet Up](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Meet-Up/)
 
 
