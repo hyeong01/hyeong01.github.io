@@ -65,14 +65,18 @@ description: Tapping into NLP
         - Utilize only the part of the info as an output
         - <a href="https://www.codecogs.com/eqnedit.php?latex=c_t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_t" title="c_t" /></a> has all the info, even those that the model do not need at the present sequence.
         - Modifying <a href="https://www.codecogs.com/eqnedit.php?latex=c_t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_t" title="c_t" /></a>, the model can get <a href="https://www.codecogs.com/eqnedit.php?latex=h_t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?h_t" title="h_t" /></a> that only has the information we need at the present sequence
+    - Why use tanh? To give non-linearity!
+    - Why tanh in specific? To prevent the vanishing graidnet problem!
 
-    
+5. GRU
+![image](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-var-GRU.png)
+    - [image source](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+    - Cell state and hidden state combined
+    - The larger the input gate, <a href="https://www.codecogs.com/eqnedit.php?latex=z_t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?z_t" title="z_t" /></a>, the more information is lost from the prior hidden state and vice versa.
 
+6. Why GRU and LSTM no gradient vanishing & exploding problem?
+    - Use addition, not redundant multiplication
 
-
-### (Peer Session)[]
-
-### Reflections
-    - Make a plan always!
+### (Peer Session)[https://www.notion.so/nlp-team-9/2021-09-07-cf3943dc63cb40b7a85283100591904a]
 
 

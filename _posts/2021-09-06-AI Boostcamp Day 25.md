@@ -1,6 +1,6 @@
 ---
 date: 2021-09-06
-title: "[AI Boostcamp Day 25] Tapping into NLP"
+title: "[AI Boostcamp Day 25] Word Embedding, Basic Concept of NLP"
 categories: 
  - AI Boostcamp
 tags:
