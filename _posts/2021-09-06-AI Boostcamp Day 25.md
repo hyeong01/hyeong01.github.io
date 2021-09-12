@@ -58,5 +58,6 @@ description: Tapping into NLP
 ### [Peer Session](https://www.notion.so/nlp-team-9/2021-09-06-a127420e286a4a319c3a322262149a34)
 
 ### [Boostcamp Meet Up](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Meet-Up/)
+    - Advice from the previous boostcampers
 
 

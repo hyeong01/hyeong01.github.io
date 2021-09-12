@@ -1,6 +1,6 @@
 ---
 date: 2021-09-06
-title: "[AI Boostcamp Day 25] 부스트캠프 Meet Up"
+title: "부스트캠프 Meet Up"
 categories: 
  - AI Boostcamp
 tags:
