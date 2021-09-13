@@ -1,20 +1,18 @@
 ---
-date: 2021-08-27
-title: "부스트캠프 4주차 주간학습 정리"
+date: 2021-09-10
+title: "부스트캠프 5주차 주간학습 정리"
 categories: 
  - AI Boostcamp
 tags:
  - 부스트캠프
  - Boostcamp
 author: Hyeong
-description: 부스트캠프 4주차 주간학습 정리
+description: 부스트캠프 3주차 주간학습 정리
 ---
 #### 0. 일간 학습 정리 링크
-[월요일 (210823)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-15/)
-[화요일 (210824)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-16/)
-[수요일 (210825)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-17/)
-[목요일 (210826)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-18/)
-[금요일 (210827)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-19/)
+[월요일 (210906)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-23/)
+[화요일 (210907)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-24/)
+[목요일 (210909)](https://hyeong01.github.io/ai%20boostcamp/AI-Boostcamp-Day-26/)
 
 #### 0. 잘한 점
 - 좋은 아이디어를 많이 냈다!
