@@ -67,4 +67,4 @@ description: Advanced Concepts in NLP
     - Get F1-score (the harmnoic mean of precion and recall)
     - The problem -> does not consider the sequence of the output
     - Compute **N-gram** (one to four) overlap and apply geometric mean
-    - Qualify the geometric mean by **brevity penalty**. Brevity penalty is the total precision that allows overlap, with the maximum cap of 1. 
+    - Qualify the geometric mean by **brevity penalty**. Brevity penalty is the total precision that allows overlap, with the maximum cap of 1
