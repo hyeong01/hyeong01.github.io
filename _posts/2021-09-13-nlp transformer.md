@@ -23,8 +23,25 @@ description: Transformer
             <li> <a href="#c-scaling-the-dot-product">Scaling the Dot Product</a> </li>
         </ul>
     </li>
-    <li><a href="#3-transformer-multi-head-attention">Multi-Head Attention</a> </li>
-    <li><a href="#3-transformer-multi-head-attention">Block-Based Model</a></li>
+    <li><a href="#3-multi-head-attention">Multi-Head Attention</a> </li>
+    <li><a href="#4-comparison-of-computational-resources">Comparison of Computational Resources</a> </li>
+    <li><a href="#5-block-based-model">Block-Based Model</a></li>
+    <li>
+        <a href="#6-model-speicific-techniques">Model Speicific Techniques</a>
+        <ul>
+            <li> <a href="#a-normalization">Normalization</a> </li>
+            <li> <a href="#b-positional-encoding">Positional Encoding</a> </li>
+            <li> <a href="#c-warm-up-learning-rate-scheduler">Warm-up Learning Rate SchedulerPermalink</a> </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#7-decoder">Decoder</a>
+        <ul>
+            <li> <a href="#a-detailed-process">Detailed Process</a> </li>
+            <li> <a href="#b-masked-self-attention">Masked Self-Attention</a> </li>
+        </ul>
+    </li>
+    <li><a href="#8-model-performance">Model Performane</a> </li>
 </ol>
 
 Transformer adopts the attention method of Seq2Seq with attention without the division of the encoder and the decoder. Concise model helps faster learning, and by stacking queries into a matrix, the model further boosts the computational speed, still obviating the long term dependency problem and considering the future input sequences.
@@ -93,19 +110,45 @@ Transformer adopts the attention method of Seq2Seq with attention without the di
 - Residual connection: Propagates x to after the multi-head attention layer. The layer is trained to learn the residual, <a href="https://www.codecogs.com/eqnedit.php?latex=f(x)-x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(x)-x" title="f(x)-x" /></a>, not <a href="https://www.codecogs.com/eqnedit.php?latex=f(x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(x)" title="f(x)" /></a>
 - Layer normalization
 
+
+## 6. Model Speicific Techniques
 #### a. Normalization
 ![Imgur](https://i.imgur.com/Lo3Jclf.png) <br>
 [Image Source](https://arxiv.org/pdf/1803.08494.pdf)
 - Affine Transformation: <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;\rightarrow&space;ax&plus;b" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;\rightarrow&space;ax&plus;b" title="x \rightarrow ax+b" /></a>. The parameters are all trainable.
-- Batch Norm: for a pertaining node, normalize the values from all batches collectively.
+- Batch Norm: for each pertaining node, normalize the values from all batches collectively and affine transform.
 - Layer Norm: normalize each words vectors, then affine transform each sequence vector like below.
 ![Imgur](https://i.imgur.com/kRdTHCu.png)
 
-## 6. Positional Encoding
+#### b. Positional Encoding
 - Need: transformer produces the same output wherever the words are place, as long as the input words are the same. See <a href='#2-transformer'> the structure of transformer</a> to understand.
 ![Imgur](http://nlp.seas.harvard.edu/images/the-annotated-transformer_49_0.png) <br>
-[Imgur Source](http://nlp.seas.harvard.edu/2018/04/03/attention) <br>
+[Image Source](http://nlp.seas.harvard.edu/2018/04/03/attention) <br>
 - Use sinusoidal functions, for example, use sine functions for the even dimensions, and consine for the others, with different frequencies for all dimensions and them to input vectors.
 
+#### c. Warm-up Learning Rate Scheduler
+![Imgur](http://nlp.seas.harvard.edu/images/the-annotated-transformer_69_0.png) <br>
+[Image Source](https://arxiv.org/pdf/1803.08494.pdf)
+- Offsets initial large gradient with small learning rate. The apex in the middle further pushes the model that could have settled for a local minimun.
 
+## 7. Decoder
+#### a. Detailed Process
+![Image](http://nlp.seas.harvard.edu/images/the-annotated-transformer_14_0.png) <br>
+[Image Source](http://nlp.seas.harvard.edu/2018/04/03/attention) <br>
+- The query vector is from the decoder, and the key vector and the value vector is the output of the encoder
+- Use Masked decoder self-attention to produce query vector
+
+#### b. Masked Self-Attention
+- At the inference stage, the model does not have any access to inputs from the later sequence. To emulate such environment in the training process, the model has to block the access to the inputs from later sequence.
+- This can be done by adequately masking the output from <a href="https://www.codecogs.com/eqnedit.php?latex=Softmax(QK^T)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Softmax(QK^T)" title="Softmax(QK^T)" /></a> as below. 
+![Image](http://nlp.seas.harvard.edu/images/the-annotated-transformer_31_0.png) <br>
+[Image Source](http://nlp.seas.harvard.edu/2018/04/03/attention) <br>
+- Purple region is the elements of the matrix that the value is set as 0.
+- Each row mathematically expressed, <a href="https://www.codecogs.com/eqnedit.php?latex=weight_i&space;=&space;softmax(q_i\cdot&space;k_1;&space;q_i\cdot&space;k_m;&space;..&space;q_i&space;\cdot&space;k_n)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?weight_i&space;=&space;softmax(q_i\cdot&space;k_1;&space;q_i\cdot&space;k_m;&space;..&space;q_i&space;\cdot&space;k_n)" title="weight_i = softmax(q_i\cdot k_1; q_i\cdot k_m; .. q_i \cdot k_n)" /></a>
+- Simply put, <a href="https://www.codecogs.com/eqnedit.php?latex=q_i\cdot&space;k_m&space;=&space;0,&space;(i<m)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?q_i\cdot&space;k_m&space;=&space;0,&space;(i<m)" title="q_i\cdot k_m = 0, (i<m)" /></a>
+
+## 8. Model Performance
+![Image](http://nlp.seas.harvard.edu/images/the-annotated-transformer_113_0.png) <br>
+- Reduces the training cost significantly
+- BLEU score surpassed all SOTA models at year 2014 for the given task
 
