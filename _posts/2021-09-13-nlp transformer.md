@@ -53,6 +53,7 @@ Transformer adopts the attention method of Seq2Seq with attention without the di
 
 ## 2. Transformer
 - Uses only the attention model from Seq2Seq as the main model
+- 
 - General Structure <br>
 ![Image](https://user-images.githubusercontent.com/38639633/108292428-6b7a0c00-71d7-11eb-80d8-66673d3e3cc7.png)
 
@@ -132,6 +133,8 @@ Transformer adopts the attention method of Seq2Seq with attention without the di
 - Offsets initial large gradient with small learning rate. The apex in the middle further pushes the model that could have settled for a local minimun.
 
 ## 7. Decoder
+When do we need to perform tasks that require additional sequence input, such as translation, we use models with decoder.
+
 #### a. Detailed Process
 ![Image](http://nlp.seas.harvard.edu/images/the-annotated-transformer_14_0.png) <br>
 [Image Source](http://nlp.seas.harvard.edu/2018/04/03/attention) <br>
