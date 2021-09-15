@@ -23,6 +23,8 @@ description: Transformer
             <li> <a href="#c-scaling-the-dot-product">Scaling the Dot Product</a> </li>
         </ul>
     </li>
+    <li><a href="#3-transformer-multi-head-attention">Multi-Head Attention</a> </li>
+    <li><a href="#3-transformer-multi-head-attention">Block-Based Model</a></li>
 </ol>
 
 Transformer adopts the attention method of Seq2Seq with attention without the division of the encoder and the decoder. Concise model helps faster learning, and by stacking queries into a matrix, the model further boosts the computational speed, still obviating the long term dependency problem and considering the future input sequences.
@@ -68,3 +70,42 @@ Transformer adopts the attention method of Seq2Seq with attention without the di
 - Method:
     - <a href="https://www.codecogs.com/eqnedit.php?latex=H&space;=&space;A(Q,K,V)&space;=&space;softmax(\frac{QK^T}{d_k^{1/2}})V" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H&space;=&space;A(Q,K,V)&space;=&space;softmax(\frac{QK^T}{d_k^{1/2}})V" title="H = A(Q,K,V) = softmax(\frac{QK^T}{d_k^{1/2}})V" /></a>
 - Rationale: let's assume the elements of <a href="https://www.codecogs.com/eqnedit.php?latex=Q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Q" title="Q" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=K" target="_blank"><img src="https://latex.codecogs.com/gif.latex?K" title="K" /></a> are mutually independent and follows a normal distribution with mean 0 and variance 1. The variance of <a href="https://www.codecogs.com/eqnedit.php?latex=QK^T" target="_blank"><img src="https://latex.codecogs.com/gif.latex?QK^T" title="QK^T" /></a> is <a href="https://www.codecogs.com/eqnedit.php?latex=d_k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d_k" title="d_k" /></a>, the dimension of the matrices. Having huge variance is not good for training because then the weights would vary significantly, meaning that the output would reflect only some of the value vectors. To prevent this, the model divides <a href="https://www.codecogs.com/eqnedit.php?latex=QK^T" target="_blank"><img src="https://latex.codecogs.com/gif.latex?QK^T" title="QK^T" /></a> with <a href="https://www.codecogs.com/eqnedit.php?latex=d_k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d_k" title="d_k" /></a>, feeding the softmax function with an input with the mean of 0 and the vairnace of 1.
+
+## 3. Multi-Head Attention
+![Imgur](https://i.imgur.com/tXU0k1A.png) <br>
+[Image Source](https://arxiv.org/pdf/1706.03762.pdf)
+- Need: each attention layer specializes in encoding the input sequence. For example, a layer could specialize in understanding the relationship between a noun and its modifers.
+- <a href="https://www.codecogs.com/eqnedit.php?latex=MultiHead(Q,&space;K,&space;V)&space;=&space;Concat(head_1,...head_h)W^o" target="_blank"><img src="https://latex.codecogs.com/gif.latex?MultiHead(Q,&space;K,&space;V)&space;=&space;Concat(head_1,...head_h)W^o" title="MultiHead(Q, K, V) = Concat(head_1,...head_h)W^o" /></a>
+- <a href="https://www.codecogs.com/eqnedit.php?latex=head_i&space;=&space;Attention(QW_i^Q,KW_i^K,VW_i^V)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?head_i&space;=&space;Attention(QW_i^Q,KW_i^K,VW_i^V)" title="head_i = Attention(QW_i^Q,KW_i^K,VW_i^V)" /></a>
+
+## 4. Comparison of Computational Resources
+![Imgur](https://i.imgur.com/wxLuLhN.png) <br>
+[Image Source](https://arxiv.org/pdf/1706.03762.pdf)
+- <a href="https://www.codecogs.com/eqnedit.php?latex=n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?n" title="n" /></a> is sequence length
+- <a href="https://www.codecogs.com/eqnedit.php?latex=d" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d" title="d" /></a> is dimension of representation
+- <a href="https://www.codecogs.com/eqnedit.php?latex=k" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k" title="k" /></a> is the kernel size
+- <a href="https://www.codecogs.com/eqnedit.php?latex=r" target="_blank"><img src="https://latex.codecogs.com/gif.latex?r" title="r" /></a> is the size of neighborhood
+- Self attention model requires larger number of computations, but the type of computation is matrix multiplication, thus requires less total time for training. In contrast, the recurrent model requires less number of computations, but the operation is sequential; the model has a series connection, making the total training time longer.
+
+## 5. Block-Based Model
+![Imgur](https://i.imgur.com/6RJWPAR.png) <br>
+[Image Source](https://arxiv.org/pdf/1706.03762.pdf)
+- Residual connection: Propagates x to after the multi-head attention layer. The layer is trained to learn the residual, <a href="https://www.codecogs.com/eqnedit.php?latex=f(x)-x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(x)-x" title="f(x)-x" /></a>, not <a href="https://www.codecogs.com/eqnedit.php?latex=f(x)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(x)" title="f(x)" /></a>
+- Layer normalization
+
+#### a. Normalization
+![Imgur](https://i.imgur.com/Lo3Jclf.png) <br>
+[Image Source](https://arxiv.org/pdf/1803.08494.pdf)
+- Affine Transformation: <a href="https://www.codecogs.com/eqnedit.php?latex=x&space;\rightarrow&space;ax&plus;b" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;\rightarrow&space;ax&plus;b" title="x \rightarrow ax+b" /></a>. The parameters are all trainable.
+- Batch Norm: for a pertaining node, normalize the values from all batches collectively.
+- Layer Norm: normalize each words vectors, then affine transform each sequence vector like below.
+![Imgur](https://i.imgur.com/kRdTHCu.png)
+
+## 6. Positional Encoding
+- Need: transformer produces the same output wherever the words are place, as long as the input words are the same. See <a href='#2-transformer'> the structure of transformer</a> to understand.
+![Imgur](http://nlp.seas.harvard.edu/images/the-annotated-transformer_49_0.png) <br>
+[Imgur Source](http://nlp.seas.harvard.edu/2018/04/03/attention) <br>
+- Use sinusoidal functions, for example, use sine functions for the even dimensions, and consine for the others, with different frequencies for all dimensions and them to input vectors.
+
+
+
