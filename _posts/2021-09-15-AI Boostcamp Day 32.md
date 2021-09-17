@@ -1,6 +1,6 @@
 ---
 date: 2021-09-15
-title: "[AI Boostcamp Day 28]"
+title: "[AI Boostcamp Day 32]"
 categories: 
  - AI Boostcamp
 tags:
