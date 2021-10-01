@@ -14,6 +14,6 @@ author: Hyeong
 description: A usual day in Boostcamp
 ---
 ### What did I learn today
+- [self supervised pretraining models](https://hyeong01.github.io/nlp/nlp-self-supervised-pretraining-models/)
 
-
-### [Peer Session]()
+### [Peer Session](https://www.notion.so/nlp-team-9/2021-09-17-b6221ef36c874b27afc1015331b81fcd)
