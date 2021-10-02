@@ -2,7 +2,7 @@
 date: 2021-09-09
 title: "[AI Boostcamp Day 28] Seq2Seq, Beam Search, and BLEU Score"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - U Stage
  - Boostcamp

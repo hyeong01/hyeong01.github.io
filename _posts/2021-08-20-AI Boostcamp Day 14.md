@@ -2,7 +2,7 @@
 date: 2021-08-20
 title: "[AI Boostcamp Day 14] All about the Training Process"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - Multi-GPU training
  - Hyperparameter Tuning

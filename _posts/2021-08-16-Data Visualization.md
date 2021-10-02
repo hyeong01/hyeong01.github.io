@@ -2,7 +2,7 @@
 date: 2021-08-16
 title: "데이터 시각화"
 categories: 
- - Data Visualization
+ - DL Short Notes
 tags:
  - 데이터 시각화
  - Data Visualization

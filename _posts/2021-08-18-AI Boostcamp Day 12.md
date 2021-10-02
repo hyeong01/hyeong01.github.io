@@ -2,7 +2,7 @@
 date: 2021-08-18
 title: "AI Boostcamp Day 12"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - AutoGrad
  - Optimizer

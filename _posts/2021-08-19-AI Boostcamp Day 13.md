@@ -2,7 +2,7 @@
 date: 2021-08-19
 title: "[AI Boostcamp Day 13] Saving, Transfering and Monitoring Models"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - Loading a Model
  - Fine Tuning

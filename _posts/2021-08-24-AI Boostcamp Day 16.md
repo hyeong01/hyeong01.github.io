@@ -2,7 +2,7 @@
 date: 2021-08-24
 title: "[AI Boostcamp Day 16] Dataset and Data Generation "
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - P Stage
  - AI Stages

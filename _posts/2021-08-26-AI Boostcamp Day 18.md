@@ -2,7 +2,7 @@
 date: 2021-08-26
 title: "[AI Boostcamp Day 18] Training and Inference"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - P Stage
  - AI Stages

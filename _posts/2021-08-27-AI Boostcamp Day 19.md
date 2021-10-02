@@ -2,7 +2,7 @@
 date: 2021-08-27
 title: "[AI Boostcamp Day 19] Ensemble and Training Tools"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - P Stage
  - AI Stages

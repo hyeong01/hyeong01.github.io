@@ -2,7 +2,7 @@
 date: 2021-09-24
 title: "[AI Boostcamp Day 36] Special Lectures"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - Career
  - Kaggle Competition

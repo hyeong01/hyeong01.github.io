@@ -2,7 +2,7 @@
 date: 2021-09-06
 title: "부스트캠프 Meet Up"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - U Stage
  - Boostcamp

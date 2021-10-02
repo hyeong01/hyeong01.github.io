@@ -2,7 +2,7 @@
 date: 2021-09-06
 title: "[AI Boostcamp Day 26] Basic RNN, LSTM, GRU"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - U Stage
  - Boostcamp

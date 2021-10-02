@@ -2,7 +2,7 @@
 date: 2021-08-11
 title: "AI Boostcamp Day 8"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - Convolution
  - Python

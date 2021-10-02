@@ -2,7 +2,7 @@
 date: 2021-08-12
 title: "Transformer Short Note"
 categories: 
- - DL Models
+ - DL Short Notes
 tags:
  - RNN
  - Machine Learning

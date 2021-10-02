@@ -2,7 +2,7 @@
 date: 2021-08-12
 title: "AI Boostcamp Day 9"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - RNN
  - Machine Learning

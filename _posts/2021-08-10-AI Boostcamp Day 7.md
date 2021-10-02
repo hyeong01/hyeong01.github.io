@@ -2,7 +2,7 @@
 date: 2021-08-09
 title: "AI Boostcamp Day 7"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - Pytorch
  - Optimization

@@ -2,7 +2,7 @@
 date: 2021-08-13
 title: "AI Boostcamp Day 10"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - GAN
  - Generative Models

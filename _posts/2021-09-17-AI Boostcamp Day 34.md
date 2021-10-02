@@ -2,7 +2,7 @@
 date: 2021-09-17
 title: "[AI Boostcamp Day 34]"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - U Stage
  - Boostcamp

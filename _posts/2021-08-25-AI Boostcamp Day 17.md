@@ -2,7 +2,7 @@
 date: 2021-08-25
 title: "[AI Boostcamp Day 17] Model "
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - P Stage
  - AI Stages

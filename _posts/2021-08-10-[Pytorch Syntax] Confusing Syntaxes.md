@@ -2,7 +2,7 @@
 date: 2021-08-11
 title: "[Pytorch Syntax] Confusing Syntaxes"
 categories: 
- - PyTorch Syntax
+ - DL Short Notes
 tags:
  - Deep Learning
  - Pytorch

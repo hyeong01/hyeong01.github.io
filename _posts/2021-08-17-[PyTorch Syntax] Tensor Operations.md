@@ -2,7 +2,7 @@
 date: 2021-08-17
 title: "[PyTorch Syntax] Tensor Operations"
 categories: 
- - PyTorch Syntax
+ - DL Short Notes
 tags:
  - Deep Learning
  - Pytorch

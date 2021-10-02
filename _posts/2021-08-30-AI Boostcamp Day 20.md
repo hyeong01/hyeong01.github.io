@@ -2,7 +2,7 @@
 date: 2021-08-30
 title: "[AI Boostcamp Day 20] Training, Training and Training"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - P Stage
  - AI Stages

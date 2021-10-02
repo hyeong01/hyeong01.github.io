@@ -1,6 +1,6 @@
 # main links
 main:
   - title: "About Me"
-    url: /about/
+    url: "https://github.com/hyeong01/Portfolio"
   - title: "Category"
     url: "/categories/"

@@ -2,7 +2,7 @@
 date: 2021-08-23
 title: "[AI Boostcamp Day 15] P Stage 시작 "
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - P Stage
  - AI Stages

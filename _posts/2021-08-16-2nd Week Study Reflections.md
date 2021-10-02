@@ -2,7 +2,7 @@
 date: 2021-08-16
 title: "부스트캠프 2주차 주간학습 정리"
 categories: 
- - AI Boostcamp
+ - Naver AI Boostcamp Diary
 tags:
  - 부스트캠프
  - Boostcamp

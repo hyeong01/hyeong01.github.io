@@ -2,7 +2,7 @@
 date: 2021-08-19
 title: "Transfer Learning Tips"
 categories: 
- - Transfer Learning
+- DL Short Notes
 tags:
  - Deep Learning
  - PyTorch
