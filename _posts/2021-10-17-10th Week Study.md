@@ -2,7 +2,7 @@
 date: 2021-10-17
 title: "MRC Summary"
 categories: 
- - NLP
+ - MRC
 tags:
  - MRC
  - Boostcamp
