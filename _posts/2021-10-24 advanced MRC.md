@@ -12,6 +12,7 @@ description: Summary of Lectures
 ## 1. Closed-book QA
 - Popular approaches such as MRC and Open-domain QA are allowed to use supporting documents outside of the model
 - New approaches have tried to save the information in the model parameters
+
 #### a. Text-to-Text Format
 - Similar to Gerative MRC, except that the model is not provided with contexts
 - Uses seq-to-seq transformer models like BART, and the input consists of a question and the explanation of the task
