@@ -25,10 +25,10 @@ description: About Tuning the DL Model
 - Hyperparameter Tuning: grid search -> too much resource
 
 ### Experiment Toolkits & Tips
-- (Tensorboard)[https://hyeong01.github.io/deep%20learning%20visualization/Basic-Tensorboard-with-Code/]
+- [Tensorboard](https://hyeong01.github.io/deep%20learning%20visualization/Basic-Tensorboard-with-Code/)
 
 
-### (Peer Session)[https://www.notion.so/2021-08-27-6add1b3dc082482d988779548471d04b]
+### [Peer Session](https://www.notion.so/2021-08-27-6add1b3dc082482d988779548471d04b)
 
 ### What did I Do Today
     - Asked people to train model for each task

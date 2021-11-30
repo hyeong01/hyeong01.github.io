@@ -77,6 +77,6 @@ description: Tapping into NLP
 6. Why GRU and LSTM no gradient vanishing & exploding problem?
     - Use addition, not redundant multiplication
 
-### (Peer Session)[https://www.notion.so/nlp-team-9/2021-09-07-cf3943dc63cb40b7a85283100591904a]
+### [Peer Session](https://www.notion.so/nlp-team-9/2021-09-07-cf3943dc63cb40b7a85283100591904a)
 
 

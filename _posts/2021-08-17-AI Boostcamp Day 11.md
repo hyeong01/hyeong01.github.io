@@ -22,7 +22,7 @@ description: Basic Pytorch Implementation
         - Adopts the tensor structure from Numpy
         - Auto Gradient
     
-2. 2. [PyTorch Operations](https://hyeong01.github.io/pytorch%20syntax/PyTorch-Syntax-2/)
+2. PyTorch Operations
 
 3. Assignment:
     - Creating a NN model with PyTorch. SO HARD!
