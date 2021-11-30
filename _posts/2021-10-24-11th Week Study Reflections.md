@@ -10,9 +10,9 @@ author: Hyeong
 description: 부스트캠프 11주차 주간학습 정리
 ---
 #### 0. 배운 것들
-[Advanced Topis in MRC](https://hyeong01.github.io/mrc/11th-advanced-MRC/) </br>
-[Elasticsearch](https://hyeong01.github.io/mrc/11th-Elastic-Search/) </br>
-[Sources of Bias in MRC](https://hyeong01.github.io/mrc/11th-sources-of-bias-in-MRC/) </br>
+[Advanced Topis in MRC](https://hyeong01.github.io/mrc/11th-advanced-MRC/)
+[Elasticsearch](https://hyeong01.github.io/mrc/11th-Elastic-Search/)
+[Sources of Bias in MRC](https://hyeong01.github.io/mrc/11th-sources-of-bias-in-MRC/)
 
 
 #### 1. 개선할 점
