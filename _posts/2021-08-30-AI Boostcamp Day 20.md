@@ -26,7 +26,7 @@ description: About Tuning the DL Model
  - f1 loss
  - try lots of models
 
-### (Peer Session)[https://www.notion.so/2021-08-30-a3cba5ad040845b4bf0717bb78b41273]
+### [Peer Session](https://www.notion.so/2021-08-30-a3cba5ad040845b4bf0717bb78b41273)
 
 ### Reflections
     - Make a plan always!
